@@ -80,11 +80,16 @@ h6 {
     margin: 0 auto;
 }
 
-.bg-light-gray {
-    background-color: #f7f7f7;
+.bg-gray-light {
+    background-color: #777;
 }
-
-.bg-darkest-gray {
+.bg-gray {
+  background-color: #555;
+}
+.bg-gray-dark {
+  background-color: #333;
+}
+.bg-gray-darkest {
     background-color: #222;
 }
 
@@ -211,26 +216,26 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: white;
+    background-color: black;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: gray;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: white;
 }
 
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
-    color: #fff;
+    color: white;
 }
 
 .navbar-default .nav li a:hover,
@@ -316,7 +321,25 @@ header .intro-text .intro-heading {
     font-weight: 700;
     line-height: 50px;
 }
+@media(max-width:666px) {
+  .header-container {
+    width: 100%;
+    height: 30%;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding: 20px;
+  }
 
+  .video-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
@@ -349,6 +372,7 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+    color: white;
 }
 
 section h3.section-subheading {
@@ -370,7 +394,15 @@ section h3.section-subheading {
     margin: 15px 0;
     text-transform: none;
 }
+#about {
+  padding-top: 10%;
+  padding-bottom: 80px;
+}
 
+#portfolio {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -455,7 +487,6 @@ section h3.section-subheading {
 }
 
 .timeline:before {
-    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -560,8 +591,45 @@ section h3.section-subheading {
 .timeline .timeline-body>ul {
     margin-bottom: 0;
 }
+@media(min-width:667px) {
+  .header-container {
+    width: 100%;
+    height: 375px;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding: 20px;
+  }
 
+  .video-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
 @media(min-width:768px) {
+
+  .header-container {
+    width: 100%;
+    height: 445px;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding: 20px;
+  }
+
+  .video-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
     .timeline:before {
         left: 50%;
     }
@@ -580,9 +648,10 @@ section h3.section-subheading {
 
     .timeline>li .timeline-image {
         left: 50%;
-        width: 100px;
-        height: 100px;
+        width: 175px;
+        height: 175px;
         margin-left: -50px;
+        background-color: black;
     }
 
     .timeline>li .timeline-image h4 {
@@ -599,6 +668,25 @@ section h3.section-subheading {
 }
 
 @media(min-width:992px) {
+
+  .header-container {
+    width: 100%;
+    height: 575px;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding: 20px;
+  }
+
+  .video-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
     .timeline>li {
         min-height: 150px;
     }
@@ -608,9 +696,11 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         margin-left: -75px;
+        margin-top: -2%;
+        background-color: black;
     }
 
     .timeline>li .timeline-image h4 {
@@ -625,6 +715,25 @@ section h3.section-subheading {
 }
 
 @media(min-width:1200px) {
+
+    .header-container {
+      width: 100%;
+      height: 600px;
+      border-left: none;
+      border-right: none;
+      position: relative;
+      padding: 20px;
+    }
+
+    .video-container {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
     .timeline>li {
         min-height: 170px;
     }
@@ -634,9 +743,11 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image {
-        width: 170px;
-        height: 170px;
+        width: 230px;
+        height: 230px;
+        margin-top: -2%;
         margin-left: -85px;
+        background-color: black;
     }
 
     .timeline>li .timeline-image h4 {
@@ -646,6 +757,26 @@ section h3.section-subheading {
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px;
     }
+}
+@media(min-width:1400px) {
+
+  .header-container {
+    width: 100%;
+    height: 700px;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    padding: 20px;
+  }
+
+  .video-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 .team-member {
@@ -891,23 +1022,9 @@ body {
 /* -------- Header & Video Container, Video ----------- */
 
 
-.header-container {
-  width: 100%;
-  height: 900px;
-  border-left: none;
-  border-right: none;
-  position: relative;
-  padding: 20px;
-}
 
-.video-container {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  height: 70%;
-  width: 100%;
-  overflow: hidden;
-}
+
+
 
 video {
   position: absolute;
@@ -921,14 +1038,16 @@ video {
 .headline {
   color: black;
   z-index: 1;
-  text-align: center;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20%;
+  margin-top: 25%;
   padding: 10px;
   border-radius: 15px;
-  width: 700px;
   letter-spacing: 3px;
   font-size: 50px;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* ------------ intro pic ---------- */
+.intro_image {
+  margin-top: 2%;
 }
